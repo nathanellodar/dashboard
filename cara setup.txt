@@ -1,0 +1,24 @@
+CREATE PROJECT REACT WITH VITE
+npm create vite@latest
+npm install
+
+INSTALL REACT ROUTER DOM
+npm i react-router-DOM
+
+IMPORT REACT ROUTER DOM -- gunakan di main.jsx karena itu "adalah gerbang utama"
+import {createBrowserRouter, RouterProvider} from "react-router-dom"
+
+DEKLARASI ROUTING
+const router = createBrowserRouter([
+    {
+        element: <>, // komponen mana yang akan diarahkan
+        path: "" // url yang di tuju
+    }
+])
+
+CARA GUNAKAN ROUTING YANG SUDAH DI DEKLARASI
+
+<RouterProvider router{router}/>
+
+INSTALL JOTAI
+npm install jotai
